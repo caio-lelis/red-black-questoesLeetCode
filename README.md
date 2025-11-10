@@ -1,20 +1,5 @@
-# Repositório Template
-Repositório de Template para os projetos da disciplina 
-```
-Nome do Repositório (Apague este tópico)
-  O nome do repositório deve seguir o padrão <TemaProjeto>_<Nome Projeto>.
-  O nome do projeto deve representar o que foi implementado no mesmo (Ex:
-  Game xyz, Implementações Otimizadas de Algoritmos, Aplicativo xpto)
+Arv-questoesLeetCode
 
-Os temas de projeto são:  
- - Busca - Algoritmos de busca  
- - Ord_quad - Algoritmos de ordenação O(n²)  
- - Ord_nlogn - Algoritmos de ordenação O(n*log(n))  
- - Arv - Algoritmos de manipulação de Árvores  
- - Grafo - Algoritmos de manipulação de Grafos  
- 
- Ex: Busca_ConcorrenteDaGoogle
-```
 ## Alunos  
 | Matrícula | Nome |  
 |-----------|------|  
@@ -22,16 +7,48 @@ Os temas de projeto são:
 | 211062900 | Caio Lucas Lelis Borges |  
 
 ## Descrição do projeto
-Aqui você deve dizer o objetivo deste projeto e o que realmente foi feito neste repositório.
-## Guia de instalação
-Aqui devem estar descritas as dependências do projeto (versões de linguagens e ferramentas) e as instruções necessárias para executar o projeto. 
-### Dependências do projeto
-### Como executar o projeto
-## Capturas de tela
-Neste tópico você deve adicionar imagens do funcionamento do projeto.  
- - As imagens devem ser salvas no repositório.
- - Imagens salvas em domínios eternos tendem a ficar indisponíveis e devem ser evitadas.   
+Para essa entrega nossa dupla optou pela prática de questões envolvendo árvores balanceadas no LeetCode.
+
+
+## Sobre as questões
+
+### Questão 3542(Caio Lelis) - Minimum Operations to Convert All Elements to Zero
+
+O que a questão pede:
+Dado um array de números inteiros não-negativos, precisamos zerar todos os elementos usando o mínimo número de operações possível.
+Em cada operação, é permitido escolher um subarray e zerar todas as ocorrências do mínimo valor não-negativo desse subarray.
+
+Como resolvi:
+A solução utiliza uma abordagem recursiva baseada em segmentos:
+
+Para cada subarray, encontra-se o mínimo valor e aplica-se a operação para zerá-lo.
+
+O array é então dividido em subsegmentos de valores maiores que o mínimo, que são processados recursivamente.
+
+Em cada etapa, o algoritmo escolhe o mínimo entre:
+
+Zerando cada elemento individualmente (pior caso)
+
+Zerando pelo mínimo e processando os segmentos recursivamente
+
+
+### Questão 710(Caio Lelis) - Random Pick with Blacklist
+
+O que a questão pede:
+Dado um inteiro n e uma lista de números blacklist, o objetivo é criar um algoritmo que escolha aleatoriamente um número no intervalo [0, n-1] que não esteja na blacklist.
+Todos os números válidos devem ter a mesma probabilidade de serem escolhidos. Além disso, a solução deve minimizar chamadas à função de randomização da linguagem.
+
+Como resolvi:
+A solução cria uma lista de números válidos (todos os números de 0 a n-1 que não estão na blacklist).
+
+Na inicialização, percorremos o intervalo [0, n-1] e armazenamos apenas os números que não estão na blacklist.
+
+Para cada chamada de pick(), escolhemos aleatoriamente um índice dessa lista de números válidos.
+Essa abordagem garante que todos os números permitidos tenham probabilidade uniforme e que a função random seja chamada uma vez por pick, de forma eficiente.
+
 ## Conclusões
-Aqui você diz se o algoritmo utilizado foi útil, se tem limitações, etc.
+A prátiva das questões nos ajudou bastante a fixar os conceitos de árvores balanceadas, além de nos proporcionar o contato com diferentes tipos de problemas que podem ser resolvidos com essas estruturas de dados.
+
 ## Referências
+
 Caso tenha utilizado algum agoritmo como base, citar o mesmo devidamente para  evitar quaisquer denuncias de plágio.
