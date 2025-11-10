@@ -17,9 +17,10 @@ Os temas de projeto são:
 ```
 ## Alunos  
 | Matrícula | Nome |  
-|-----------------------|---------------------|  
-| xx/xxxxxxx | xxxx xxxx xxxxx |  
-| xx/xxxxxxx | xxxx xxxx xxxxx |  
+|-----------|------|  
+| 200035703 | Breno Alexandre Soares Garcia |  
+| 211062900 | Caio Lucas Lelis Borges |  
+
 ## Descrição do projeto
 Aqui você deve dizer o objetivo deste projeto e o que realmente foi feito neste repositório.
 ## Guia de instalação
